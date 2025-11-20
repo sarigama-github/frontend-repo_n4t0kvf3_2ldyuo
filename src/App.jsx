@@ -10,19 +10,18 @@ import SEO from './components/SEO'
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      {/* SEO meta */}
+    <div className="min-h-screen bg-[#0a0b10] text-white selection:bg-white selection:text-black">
       <SEO />
-
-      {/* Ambient animated background */}
       <BackgroundFX />
 
       <Navbar />
-      <Hero />
-      <Stats />
-      <Features />
-      <Pricing />
-      <CTA />
+      <main>
+        <Hero />
+        <Stats />
+        <Features />
+        <Pricing />
+        <CTA />
+      </main>
       <Footer />
     </div>
   )
